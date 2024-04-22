@@ -1,0 +1,53 @@
+<!-- 
+   PROGRESSIVELY ENHANCED
+   If a user has `prefers-reduced-motion: reduced`, there will be no animation
+   and the items will wrap, instead of being hidden.
+   If they have not opted for reduced motion, the items will be duplicated with JS
+   and the duplicated content will have `aria-hidden="true"` to prevent duplicate content
+   for screen readers.
+   If a user has JS disabled or it fails for whatever reason, they will get the same 
+   experience as a user with `prefers-reduced-motion: reduced`, so no content is hidden,
+   and there is no animation.
+   
+   === OPTIONS ===
+   CONTROL SPEED 
+   If you don't assign anything, it will use a default speed.
+   To change the speed, on the `.scroller`
+   you can use `data-speed="fast"` or `data-speed="slow"
+
+   CONTROL DIRECTION 
+   By default, it will scroll from right to left.
+   To change the direction, on the `.scroller`
+   you can use `data-direction="right"` (`data-direction="left" also works, but it is the default) 
+-->
+
+<h1 style="text-align: center">Infinite Scroll Animation</h1>
+
+<div class="scroller" data-speed="slow">
+  <ul class="tag-list scroller__inner">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>SSG</li>
+    <li>webdev</li>
+    <li>animation</li>
+    <li>UI/UX</li>
+  </ul>
+</div>
+
+<div class="scroller" data-speed="slow" data-direction="right">
+  <ul class="tag-list scroller__inner">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>SSG</li>
+    <li>webdev</li>
+    <li>animation</li>
+    <li>UI/UX</li>
+  </ul>
+</div>
+</div>
+
+<a class="yt" href="https://youtu.be/pKHKQwAsZLI">
+  Watch the tutorial
+</a>
